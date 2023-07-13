@@ -1,0 +1,93 @@
+{
+  "name": "react-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.4.10",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@graphql-codegen/cli": "^2.2.2",
+    "@graphql-codegen/introspection": "^2.1.0",
+    "@graphql-codegen/typescript": "^2.3.0",
+    "@graphql-codegen/typescript-operations": "^2.2.0",
+    "@graphql-codegen/typescript-react-apollo": "^3.2.0",
+    "@mui/icons-material": "^5.0.0",
+    "@mui/lab": "^5.0.0-alpha.51",
+    "@mui/material": "^5.0.0",
+    "@mui/styles": "^5.0.1",
+    "@mui/types": "^7.0.0",
+    "@mui/x-data-grid": "^4.0.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.24",
+    "@types/lodash": "^4.14.173",
+    "@types/node": "^12.20.21",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-swipeable-views-utils": "^0.13.3",
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "framer-motion": "^4.1.17",
+    "graphql": "^15.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "next": "^12.0.7",
+    "notistack": "^2.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-image-magnifiers": "^1.4.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-swipeable-views": "^0.14.0",
+    "react-swipeable-views-utils": "^0.14.0",
+    "react-toastify": "^8.1.0",
+    "react-widgets": "^5.3.0",
+    "react-zoom-pan-pinch": "^2.1.3",
+    "recharts": "^2.1.8",
+    "typescript": "^4.4.2",
+    "web-vitals": "^1.1.2",
+    "zustand": "^3.6.5"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run start\" \"npm run mock-graphql\"",
+    "start": "react-scripts start",
+    "mock-graphql": "json-graphql-server db.js --p 4001",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "winBuild": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "gen-graphql": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 graphql-codegen --config codegen.yml",
+    "start_next": "next start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "no-unused-vars": 0,
+      "@typescript-eslint/no-unused-vars": 0
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-image-magnifiers": "^1.3.2",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/react-swipeable-views": "^0.13.1",
+    "concurrently": "^7.0.0",
+    "cross-env": "^7.0.3",
+    "json-graphql-server": "^2.3.1"
+  }
+}

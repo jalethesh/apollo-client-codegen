@@ -1,0 +1,16 @@
+overwrite: true
+schema: https://54.193.209.15:42409/graphql-api
+documents:
+  - "src/**/*.tsx"
+  - "src/graphql/*.ts"
+generates:
+  src/types/graphql.tsx:
+    config:
+      scalars:
+        DateTime: string
+      nonOptionalTypename: true
+      preResolveTypes: false
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"

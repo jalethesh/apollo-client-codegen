@@ -1,0 +1,40 @@
+.css-et1ao3-MuiTypography-root {
+  font-size: 1.5rem !important;
+}
+
+@media (max-width:600px) {
+
+  .MuiTableRow-root {
+    display: block !important;
+    border-bottom: 1px solid rgb(49, 30, 30);
+  }
+
+  .MuiTableCell-root {
+    transition: all 1s !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    border-bottom: none !important;
+    padding: 12px 16px !important;
+  }
+
+  .MuiTableHead-root {
+    display: none !important;
+  }
+
+  .cell_display {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cell_hidden {
+    display: none !important;
+  }
+
+  .MuiTypography-root {
+    font-size: 0.85rem !important;
+  }
+
+
+}

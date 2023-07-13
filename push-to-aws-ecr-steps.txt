@@ -1,0 +1,5 @@
+aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin 787140608956.dkr.ecr.us-west-1.amazonaws.com
+docker build -t juzam2-dev .
+docker tag juzam2-dev:latest 787140608956.dkr.ecr.us-west-1.amazonaws.com/juzam2-dev:latest
+docker push 787140608956.dkr.ecr.us-west-1.amazonaws.com/juzam2-dev:latest
+ 
